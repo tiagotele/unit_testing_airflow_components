@@ -1,7 +1,7 @@
 from datetime import datetime
 from airflow.models.dag import DAG
 from airflow.models.taskinstance import TaskInstance
-from multiply_by_5operator import MultiplyBy5Operator
+from dags.multiply_by_5operator import MultiplyBy5Operator
 
 def test_obj_creation():
     param = 10
