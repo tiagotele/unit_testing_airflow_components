@@ -13,5 +13,5 @@ def test_obj_creation():
 def test_execute_with_number():
     dag = DAG(dag_id='test_dag', start_date=datetime.now())
     task = MultiplyBy5Operator(my_operator_param=10, dag=dag, task_id='MyCustomOperator')
-    result = task.execute(context=None)
+    result = task.execute(context={})
     assert result == 50
