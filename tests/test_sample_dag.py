@@ -30,7 +30,7 @@ def test_contain_tasks(dagbag):
                                 'hello_task2', 'multiplyby5_task']
 
 
-def test_dag_Structure(dagbag):
+def test_dag_structure(dagbag):
     dag_id = 'hello_world'
     dag = dagbag.get_dag(dag_id)
     assert dag.description == 'Hello World DAG'
