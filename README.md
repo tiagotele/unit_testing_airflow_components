@@ -14,4 +14,5 @@ pip install pytest
 ```
 
 ## Run locally
+airflow db init # run once
 make run_unit_test
